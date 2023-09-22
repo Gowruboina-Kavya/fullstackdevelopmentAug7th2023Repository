@@ -1,0 +1,58 @@
+package com.gentech.superclassinheritence;
+class canteen
+{
+	String canteenname;
+	String id;
+	void show(String canteenname,int id)
+	{
+		System.out.println("canteen name in superclass is:"+canteenname);
+		System.out.println("cantten id is:"+id);
+		
+	}
+	
+}
+class canteen1 extends canteen
+{
+	canteen1(String name,int id)
+	{
+	super.canteenname=name;
+		
+	}
+	String name;
+	int id;
+	void display(String canteenname,int id)
+	{
+		System.out.println("firstname in subclass:"+name); 
+		System.out.println("canteen id:"+id);
+	
+}
+}
+class canteen2 extends canteen
+{
+	canteen2(String name,int id)
+	{
+		super.display(String name,int id);
+		super.canteenname=name;
+		super. id=id;
+		
+	}
+	String name;
+	int id;
+	void display1(String name,int id)
+	{
+		System.out.println("firstname in subclass:"+name); 
+		System.out.println("canteen id:"+id);
+	
+	}
+}
+public class multilevelinheritencecontainssamevariableanddatatypes2 {
+
+	public static void main(String[] args) {
+		canteen1 obj=new canteen1("kavya",10);
+		obj.show("kavitha",10);
+		obj.display("bhargavi", 11);
+		obj.display("harish",12);
+
+	}
+
+}

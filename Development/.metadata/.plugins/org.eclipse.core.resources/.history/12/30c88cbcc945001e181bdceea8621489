@@ -1,0 +1,12 @@
+package com.gentech.assignmentsofarrays;
+
+public class additionoftwoarrays {
+
+	public static void main(String[] args) {
+		int a={2,4,6,8};
+		int b={10,20,30,40,50,60};
+		
+
+	}
+
+}

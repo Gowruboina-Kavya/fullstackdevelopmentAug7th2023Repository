@@ -1,0 +1,23 @@
+package com.gentech.AbstractAssignmentsDemo;
+abstract class canteeen
+{
+	void showcanteen(String canteenname)
+	{
+		System.out.println("cantenname:"+canteenname);
+	}
+}
+class college extends canteeen
+{
+	
+}
+
+
+public class AbstractClassContainsInstanceBlock {
+
+	public static void main(String[] args) {
+		college obj=new college();
+		obj.showcanteen("varma");
+
+	}
+
+}

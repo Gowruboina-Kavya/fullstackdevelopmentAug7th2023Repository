@@ -1,0 +1,82 @@
+package com.gentech.AbstractAssignmentsDemo;
+abstract class hospital1
+{
+	String name;
+	int id;
+	hospital1(String fname,int id)
+	{
+		this.name=fname;
+		this.id=id;
+		System.out.println("superclass constructor1: name="+fname);
+		System.out.println("superclass constructor1: id="+id);
+
+	}
+	hospital1(int id)
+	{
+		this.id=id;
+		System.out.println("superclass constructor2: id="+id);
+	}
+	hospital1(String fname)
+	{
+		this.name=fname;
+		System.out.println("superclass constructor3: name="+fname);
+	}
+}
+abstract class patient1 extends hospital1
+{
+	patient1(String name,int id)
+	{
+		super(name,id);
+		System.out.println("subclass1 constructor1 name=" +name);
+		System.out.println("subclass1 constructor1 id=" +id);
+
+	}
+	patient1(int id)
+	{
+		super(id);
+		System.out.println("subclass1 constructor2: id="+id);
+	}
+	patient1(String name)
+	{
+		super(name);
+		System.out.println("subclass1 constructor3: name="+name);
+	}
+}
+class nurse extends patient1
+{
+	nurse(String name,int id)
+	{
+		super(name,id);
+		System.out.println("subclass2 constructor1 name=" +name);
+		System.out.println("subclass2 constructor1 id=" +id);
+
+	}
+	nurse(int id)
+	{
+		super(id);
+		System.out.println("subclass2 constructor2: id="+id);
+	}
+	nurse(String name)
+	{
+		super(name);
+		System.out.println("subclass2 constructor3: name="+name);
+	}
+}
+
+
+
+public class Multilevelinheritenceconstructoroverloading {
+
+	public static void main(String[] args) {
+		nurse o1=new nurse("suraj",1001);
+		System.out.println("*******");
+		nurse o2=new nurse("susanth");
+		System.out.println("**********");
+		nurse o3=new nurse(1003);
+
+	}
+}
+
+
+
+

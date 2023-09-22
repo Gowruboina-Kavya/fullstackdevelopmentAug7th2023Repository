@@ -1,0 +1,155 @@
+package com.gentech.practicetest;
+//1question
+class array
+{
+	String array()
+	{
+		String s[]= {"apple","mango","Orange","banana"};
+		return s[0];
+	}
+}
+//2nd question
+class intarray
+{
+	int[][] intarray()
+	{
+		int s[][]= {{1,4,5},{6,7,8}};
+		return s;
+	}
+}
+//3question
+
+class circle
+{
+	double circlerad(int r)
+	{
+		double a=3.14*r*r;
+		return a;
+	}
+}
+//4question
+class Native
+{
+	String NativePlace()
+	{
+		String n="Ongole";
+		return n;
+	}
+}
+//5 question
+class cube
+{
+	int cubenum(int n) 
+	{
+		int i=n*n*n;
+		return i;
+	}
+}
+// 6 question
+class price
+{
+	int pricebook()
+	{
+		int g=35;
+		return g;
+	}
+}
+
+//7question
+class sum
+{
+	static int intarray()
+	{
+		int sum=0;
+		int l[]= {2,4,6,8,10};
+		for(int i=0;i<l.length;i++)
+		{
+		sum=sum+i;
+		}
+		return sum;
+		}
+	}
+
+
+//8question
+class divby3
+{
+	//int numberby3(int num)
+	{
+		int count=0;
+		for(int i=40;i<=80;i++)
+		{
+			if(i%3==0)
+			{
+
+				System.out.println(count+" ");
+				count=count+1;
+				//return count;
+			}
+		}
+	}
+}
+//
+public class practicetest {
+
+	public static void main(String[] args) {
+		array obj=new array();
+		String x=obj.array();
+		System.out.println(x+" is first element");
+
+		//2question
+		System.out.println("int 2D array is:");
+		intarray ob1=new intarray();
+		int a[][]=ob1.intarray();
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a[i].length;j++)
+			{
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+
+
+		//3 question
+		System.out.println("Area of triangle is:");
+		circle o2=new circle();
+		double  k=o2.circlerad(4);
+		System.out.println(k+" ");
+
+		//4question
+		System.out.println("native place is:");
+		Native o3=new Native();
+		String b=o3.NativePlace();
+		System.out.println(b+" is my native place");
+
+		//5question
+		System.out.println("cube of a number is:");
+		cube o4=new cube();
+		int h=o4.cubenum(5);
+		System.out.println(h+"is cube of the number");
+
+
+		// 6question
+		System.out.println("notebook price is:");
+		price o5=new price();
+		int f=o5.pricebook();
+		System.out.println(f+" is the book price");
+
+		//7question
+		int sum=0;
+		int j[]= {2,4,6,8,10};
+		for(int i=0;i<j.length;i++)
+		{
+		sum=sum+i;
+		}
+		System.out.println(sum+"sum of elements ");
+		
+		//	System.out.println(s+" ");
+		}
+
+
+
+	}
+
+

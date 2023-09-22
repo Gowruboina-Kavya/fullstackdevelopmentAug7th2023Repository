@@ -1,0 +1,57 @@
+package com.gentech.Interfaces;
+interface School
+{
+	void showSchooldetails(String Sname,String Saddress,String Slocation);	
+}
+interface Students extends School
+{
+	abstract void displayStudentdetails(String Sname,String Sadress,String SLocation);
+}
+interface teachers extends Students
+{
+	abstract void showteachersdetails(String tname,String tadress,String tLocation);
+}
+class principal implements teachers
+{
+	public void showSchooldetails(String Sname,String Saddress,String Slocation)
+	{
+		System.out.println("The School name  is:"+Sname);
+		System.out.println("The School address  is:"+Saddress);
+		System.out.println("The School location  is:"+Slocation);
+	}
+	public void displayStudentdetails(String Sname,String Saddress,String SLocation)
+
+	{
+		System.out.println("The Student name is:"+Sname);
+		System.out.println("The Student address is:"+Saddress);
+		System.out.println("The Student location is:"+SLocation);
+	}
+	public void showteachersdetails(String tname,String taddress,String tLocation)
+	{
+
+		System.out.println("The teacher name is:"+tname);
+		System.out.println("The teacher address is:"+taddress);
+		System.out.println("The teacher location is:"+tLocation);
+		System.out.println("************************************");
+	}
+	void showprincipaldetails(String pname,String paddress,String pLocation)
+	{
+		System.out.println("The principal name is:"+pname);
+		System.out.println("The principal address is:"+paddress);
+		System.out.println("The principal location is:"+pLocation);
+		System.out.println("**************************************");
+
+	}
+}
+public class Interfacecontainsthreevariables {
+
+	public static void main(String[] args) {
+		principal obj=new principal();
+		obj.showSchooldetails("vikas","ongole","post office road");
+		obj.displayStudentdetails("kavya","kothapatnam","bc colony");
+		obj.showteachersdetails("rani","rajupalem","2cross");
+		obj.showprincipaldetails("ravi", "chennai", "3cross");
+
+	}
+
+}

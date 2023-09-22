@@ -1,0 +1,17 @@
+package com.gentech.blockspractice;
+
+
+public class BlocksDemo {
+	static String firstname;
+	static int id;
+	
+
+	public static void main(String[] args) {
+		firstname="sandya";
+		id=10;
+		System.out.println("first name is:"+firstname);
+		System.out.println("id is:"+id);
+
+	}
+
+}

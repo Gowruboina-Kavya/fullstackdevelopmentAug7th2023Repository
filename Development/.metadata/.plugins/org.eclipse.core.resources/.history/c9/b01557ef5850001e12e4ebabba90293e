@@ -1,0 +1,10 @@
+package com.gentech.UsingMethods;
+
+public class RecurssionAssignDisplay {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

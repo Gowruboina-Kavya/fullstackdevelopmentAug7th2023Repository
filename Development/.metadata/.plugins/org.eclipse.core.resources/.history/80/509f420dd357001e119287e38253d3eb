@@ -1,0 +1,60 @@
+package com.gentech.Polymorphisimassignments;
+abstract class animal
+{
+	abstract void action();
+}
+class dog extends animal
+{
+	void action()
+	{
+		String a="woof";
+		System.out.println("dog sounds in:"+a);
+	}
+}
+class cat extends animal
+{
+	void action()
+	{
+		String b="meow";
+		System.out.println("cat make sounds in:"+b);
+	}
+}
+class elephant extends animal
+{
+	void action()
+	{
+		String c="trumpet";
+		System.out.println("Elephant make sounds in"+c);
+	}
+}
+class cow extends animal
+{
+	void action()
+	{
+		String d="Moo";
+		System.out.println("Cow make sounds in:"+d);
+	}
+}
+
+public class birdspolymorphisim {
+
+	public static void main(String[] args) {
+		animal sounds=null;
+		
+		dog obj=new dog();
+		cat obj1=new cat();
+		elephant obj2=new elephant();
+		cow obj3=new cow();
+		
+		
+		sounds=obj;
+		sounds.action();
+		sounds=obj1;
+		sounds.action();
+		sounds=obj2;
+		sounds.action();
+		sounds=obj3;
+		sounds.action();
+	}
+
+}

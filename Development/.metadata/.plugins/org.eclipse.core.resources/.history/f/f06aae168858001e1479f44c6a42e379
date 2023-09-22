@@ -1,0 +1,26 @@
+package com.gentech.blockspractice;
+class Demo1
+{
+	void addition(int x,int y)
+	{
+		int res=(x+y);
+		System.out.println(+res);
+	}
+}
+class demo2
+{
+	static void multiplication(int x,int y)
+	{
+		Demo1 obj=new Demo1();
+		obj.addition(100,200);
+		int res=(x*y);
+		System.out.println(+(x*y));
+	}
+}
+
+public class BlocksDemo {
+	public static void main(String[] args) {
+		demo2.multiplication(5, 3);
+	}
+
+}

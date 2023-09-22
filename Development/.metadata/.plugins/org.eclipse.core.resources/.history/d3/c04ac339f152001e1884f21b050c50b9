@@ -1,0 +1,40 @@
+package com.gentech.superclassinheritence; 
+class student
+{
+	String firstname;
+	int id;
+	void show()
+	{
+		System.out.println("firstname in superclass:"+firstname);
+		System.out.println("student Id is:"+id);
+	}
+	
+}
+class library extends student
+{
+	library(String name,int id)
+	{
+		super.firstname=name;
+		super.id=id;	
+	}
+	String firstname;
+	int id;
+	void display()
+	{
+		System.out.println("firstname in subclass:"+firstname); 
+		System.out.println("library id:"+id);
+		
+	}
+}
+
+public class MultilevelInheritenceassign1 {
+
+	public static void main(String[] args) {
+	library obj=new library("control system",10);
+	obj.firstname="kavya";
+	obj.show();
+	obj.display();
+
+	}
+
+}

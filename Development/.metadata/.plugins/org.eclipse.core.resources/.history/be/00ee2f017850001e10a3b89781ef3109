@@ -1,0 +1,32 @@
+package com.gentech.debugmethodencapsulation;
+class maths1
+{
+	static maths1 obj=null;
+	private maths1()
+	{
+		//it is private constructor
+	}
+	void addition(int x,int y)
+	{
+		int res=(x+y);
+		System.out.println("addition result:"+res);
+	}
+	public static maths1 getInstance()
+	{
+		if(obj==null)
+		{
+			obj=new maths1();
+			
+		}
+		return obj;
+	}
+}
+
+public class Debuggingtheprogramming {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

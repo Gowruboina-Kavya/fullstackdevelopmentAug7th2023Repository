@@ -1,0 +1,10 @@
+package com.gentech.returndemo;
+
+public class LogicalopAnd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

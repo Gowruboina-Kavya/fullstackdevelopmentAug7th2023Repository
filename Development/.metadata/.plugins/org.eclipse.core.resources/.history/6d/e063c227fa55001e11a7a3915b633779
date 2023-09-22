@@ -1,0 +1,265 @@
+package com.gentech.practicetest;
+//1question
+class array
+{
+	String array()
+	{
+		String s[]= {"apple","mango","Orange","banana"};
+		return s[0];
+	}
+}
+//2nd question
+class intarray
+{
+	int[][] intarray()
+	{
+		int s[][]= {{1,4,5},{6,7,8}};
+		return s;
+	}
+}
+//3question
+
+class circle
+{
+	double circlerad(int r)
+	{
+		double a=3.14*r*r;
+		return a;
+	}
+}
+//4question
+class Native
+{
+	String NativePlace()
+	{
+		String n="Ongole";
+		return n;
+	}
+}
+//5 question
+class cube
+{
+	int cubenum(int n) 
+	{
+		int i=n*n*n;
+		return i;
+	}
+}
+// 6 question
+class price
+{
+	int pricebook()
+	{
+		int g=35;
+		return g;
+	}
+}
+
+//7question
+class sum
+{
+	static int intarray()
+	{
+		int sum=0;
+		int l[]= {2,4,6,8,10};
+		for(int i=0;i<l.length;i++)
+		{
+			sum=sum+l[i];
+		}
+		return sum;
+		}
+	}
+
+
+//8question
+class divby3
+{
+	//int numberby3(int num)
+	{
+		int count=0;
+		for(int i=40;i<=80;i++)
+		{
+			if(i%3==0)
+			{
+
+				System.out.println(count+" ");
+				count=count+1;
+				//return count;
+			}
+		}
+	}
+}
+//9question
+class inttochar
+{
+	 char convert(int n)
+	 {
+		 char s=(char )n;
+		 return s;
+	 }
+	 
+	//10question
+	 static char[][] chararray()
+	 {
+		 char j[][]= {{'g','h','k'},{'n','m','o'}};
+				 return j;
+	 }
+	 //11question
+	 static int conv(char k)
+	 {
+		 int t=(int)k;
+		 return t;
+	 }
+	 //12question
+	 static String[] Strarray()
+	 {
+		 String d[]= {"singing","dancing","cooking"};
+		 return d;
+	 }
+	 
+	 // 13question
+	 static double average()
+	 
+	 {
+		double avg=0;
+		 int sum=0;
+		 for(int i=1;i<=10;i++)
+		 {
+			 sum=sum+i;
+			 
+		 }
+		 avg=sum/10;
+		 return avg;
+		 
+	 }
+	 
+	 //14question
+	 static int factoial(int n)
+	 {
+		 int fact=1;
+		 for(int i=1;i<=n;i++)
+		 {
+			 fact=fact*i;
+			 
+		 }
+		 return fact;
+	 }
+	 //14question
+	 static double division(int x,int y)
+	 {
+		 double div=x/y;
+		 return div;
+	 }
+	 
+}
+
+
+public class practicetest {
+
+	public static void main(String[] args) {
+		array obj=new array();
+		String x=obj.array();
+		System.out.println(x+" is first element");
+
+		//2question
+		System.out.println("int 2D array is:");
+		intarray ob1=new intarray();
+		int a[][]=ob1.intarray();
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a[i].length;j++)
+			{
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+
+
+		//3 question
+		System.out.println("Area of triangle is:");
+		circle o2=new circle();
+		double  k=o2.circlerad(4);
+		System.out.println(k+" ");
+
+		//4question
+		System.out.println("native place is:");
+		Native o3=new Native();
+		String b=o3.NativePlace();
+		System.out.println(b+" is my native place");
+
+		//5question
+		System.out.println("cube of a number is:");
+		cube o4=new cube();
+		int h=o4.cubenum(5);
+		System.out.println(h+"is cube of the number");
+
+
+		// 6question
+		System.out.println("notebook price is:");
+		price o5=new price();
+		int f=o5.pricebook();
+		System.out.println(f+" is the book price");
+
+		//7question
+		int d =sum.intarray();
+		System.out.println(d);
+		//System.out.println(s+" ");
+		
+		
+		
+		
+//9question
+		System.out.println("character to int is:");
+		inttochar o9=new inttochar();
+		char v=o9.convert(4);
+		System.out.println(v+" ");
+		
+		
+		//10question
+		System.out.println("2d character array is:");
+		char r[][]=inttochar.chararray();
+		for(int i=0;i<r.length;i++)
+		{
+			for(int j=0;j<r[i].length;j++)
+			{
+				System.out.print(r[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+		
+		//11question
+		System.out.println("char to int convert is:");
+		int j=inttochar.conv('l');
+		System.out.println(j+" ");
+		
+		
+		//12question
+		System.out.println("hobbies is:");
+		String u[]=inttochar.Strarray();
+		for(int i=0;i<u.length;i++)
+		{
+			System.out.print(u[i]+" ");
+		}
+		System.out.println();
+		
+		
+		//13question
+		System.out.println("Average of the number is:");
+		double q=inttochar.average();
+		System.out.println(q+" ");
+		
+		//13 question
+		System.out.println("factorial of a number is:");
+		int w=inttochar.factoial(5);
+		System.out.println(w+" ");
+		
+		
+		//14question
+		System.out.println("division of two numbers is:");
+		double z=inttochar.division(2, 4);
+		System.out.println(z+" ");
+		}
+	}
+
+
